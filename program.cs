@@ -9,7 +9,7 @@ class program
     {
 
 
-        Console.WriteLine("Enter 1 to print even Numbers:\nEnter 2 to print odd Number\nEnter 3 to show prime numbers using swtch case \nEnter 4 to check is number prime number or not\n Enter 5 to show prime numbers  ");
+        Console.WriteLine("Enter 1 to print even Numbers:\nEnter 2 to print odd Number\nEnter 3 to buy a Coffie \nEnter 4 to check is number prime number or not\n Enter 5 to show prime numbers  ");
         int userNumber = int.Parse(Console.ReadLine());
         switch (userNumber)
         {
@@ -40,34 +40,25 @@ class program
 
             case 3:
 
-                Console.WriteLine("number to show prime numbers:");
-                int userNum = int.Parse(Console.ReadLine());
-                switch (userNum)
+                int Coffieprice = 0;
+
+                Console.WriteLine("1 Small \n 2 Medium\n 3 Large:");
+                int UserChoice = int.Parse(Console.ReadLine());
+
+                switch (UserChoice)
                 {
+                    case 1:
+                        Coffieprice += 10;
+                        break;
+
                     case 2:
+                        Coffieprice += 20;
+                        break;
+
                     case 3:
-                    case 5:
-                    case 7:
-                    case 11:
-                    case 13:
-                    case 17:
-                    case 19:
-                    case 23:
-                    case 29:
-                    case 31:
-                    case 37:
-                    case 41:
-                    case 43:
-                    case 47:
-                    case 53:
-                    case 61:
-                    case 67:
-                    case 71:
-                    case 73:
-                    case 79:
-                    case 83:
-                    case 89:
-                    case 97:
+                        Coffieprice += 30;
+                        break;
+
                         Console.WriteLine("number is prime.");
                         break;
                     default:
