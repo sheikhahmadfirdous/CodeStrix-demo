@@ -41,8 +41,8 @@ class program
             case 3:
 
                 int Coffieprice = 0;
-
-                Console.WriteLine("1 Small \n 2 Medium\n 3 Large:");
+            start:
+                Console.WriteLine("Please Slect your Coffie size \n Enter 1 for Small \n Enter 2 for Medium\n Enter 3 forS Large:");
                 int UserChoice = int.Parse(Console.ReadLine());
 
                 switch (UserChoice)
@@ -59,12 +59,27 @@ class program
                         Coffieprice += 30;
                         break;
 
-                        Console.WriteLine("number is prime.");
-                        break;
                     default:
-                        Console.WriteLine("number is not prime.");
+                        Console.WriteLine("your choice {0} is invalid" , UserChoice);
+                        goto start;
+                }
+                Desion:
+                Console.WriteLine("Do you want to buy another Coffie ? Yes/NO");
+                string UserDesion = Console.ReadLine().
+                    swich(UserDesion.ToUpper());
+                     {
+                    case "YES":
+                        goto start;
+                        case "NO":
                         break;
-                } // close inner switch
+                        Console.WriteLine("Invalid input. {0} Please enter 'yes' or 'no'." ,UserDesion);
+                        goto Desion;
+
+
+                    }
+                Console.WriteLine("Thank you for Shopping with us")
+                    Console.WriteLine("your total coffie price is {0} ", Coffieprice);
+                // close inner switch
                 break; // end case 3 of outer switch
 
             case 4:
