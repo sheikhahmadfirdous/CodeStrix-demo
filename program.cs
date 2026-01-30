@@ -77,8 +77,8 @@ class program
 
 
                     }
-                Console.WriteLine("Thank you for Shopping with us")
-                    Console.WriteLine("your total coffie price is {0} ", Coffieprice);
+                     Console.WriteLine("Thank you for Shopping with us")
+                     Console.WriteLine("your total coffie price is {0} ", Coffieprice);
                 // close inner switch
                 break; // end case 3 of outer switch
 
